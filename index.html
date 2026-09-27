@@ -1,0 +1,981 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A special birthday experience created for Pooja di."
+    >
+
+    <title>Happy Birthday Pooja di ❤️</title>
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- =========================================
+         ICONS
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- =========================================
+         MAIN CSS
+    ========================================== -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         PRELOADER
+    ========================================== -->
+
+    <div id="preloader">
+
+        <div class="loader-content">
+
+            <div class="loader-heart">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <p>
+                Preparing something special...
+            </p>
+
+            <div class="loader-line">
+                <span></span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         CUSTOM CURSOR
+    ========================================== -->
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+
+    <!-- =========================================
+         BACKGROUND
+    ========================================== -->
+
+    <div class="background-layer">
+
+        <div class="gradient-orb orb-one"></div>
+        <div class="gradient-orb orb-two"></div>
+        <div class="gradient-orb orb-three"></div>
+
+        <div
+            class="stars"
+            id="stars"
+        ></div>
+
+        <div
+            class="floating-hearts"
+            id="floatingHearts"
+        ></div>
+
+    </div>
+
+
+    <!-- =========================================
+         MUSIC CONTROL
+    ========================================== -->
+
+    <button
+        class="music-button"
+        id="musicButton"
+        aria-label="Play birthday music"
+    >
+
+        <i class="fa-solid fa-music"></i>
+
+        <span class="music-rings"></span>
+
+    </button>
+
+
+    <!-- =========================================
+         AUDIO
+    ========================================== -->
+
+    <audio
+        id="birthdayMusic"
+        loop
+        preload="auto"
+    >
+
+        <source
+            src="maand.mp4"
+            type="audio/mp4"
+        >
+
+    </audio>
+
+
+    <!-- =========================================
+         MAIN WEBSITE
+    ========================================== -->
+
+    <main id="birthdayExperience">
+
+
+        <!-- =====================================================
+             SLIDE 01 — OPENING
+        ====================================================== -->
+
+        <section
+            class="slide active"
+            id="slide1"
+            data-slide="1"
+        >
+
+            <div class="slide-inner opening-slide">
+
+                <div class="eyebrow reveal-item">
+                    A LITTLE SURPRISE FOR YOU
+                </div>
+
+
+                <div class="date-badge reveal-item">
+
+                    <span class="date-number">
+                        05
+                    </span>
+
+                    <span class="date-month">
+                        OCTOBER
+                    </span>
+
+                </div>
+
+
+                <h1 class="hero-title reveal-item">
+
+                    <span class="hero-small">
+                        Happy Birthday
+                    </span>
+
+                    <span class="hero-name">
+                        Pooja di
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-description reveal-item">
+
+                    Today is not just another day.
+                    <br>
+
+                    It is the day someone truly special
+                    came into this world. ❤️
+
+                </p>
+
+
+                <div class="hero-decoration reveal-item">
+
+                    <span></span>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <span></span>
+
+                </div>
+
+
+                <button
+                    class="primary-button reveal-item"
+                    data-next
+                >
+
+                    <span>
+                        Start Your Birthday Journey
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <div class="scroll-hint">
+
+                    <span>
+                        Scroll or use the arrows
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SLIDE 02 — MEMORIES
+        ====================================================== -->
+
+        <section
+            class="slide"
+            id="slide2"
+            data-slide="2"
+        >
+
+            <div class="slide-inner memories-slide">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <p class="eyebrow">
+                            LITTLE MOMENTS
+                        </p>
+
+                        <h2>
+                            Beautiful Memories
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p class="section-intro">
+
+                    Some moments become memories,
+                    and some memories become treasures.
+                    Here are a few moments that make
+                    Pooja di so special. ✨
+
+                </p>
+
+
+                <!-- PHOTO WALL -->
+
+                <div
+                    class="photo-wall"
+                    id="photoWall"
+                >
+
+                    <!-- PHOTO 01 -->
+
+                    <article
+                        class="memory-card card-large"
+                        data-image="pooja1.jpeg"
+                    >
+
+                        <div class="memory-image">
+
+                            <img
+                                src="pooja1.jpeg"
+                                alt="Pooja memory 1"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="memory-overlay">
+
+                            <span>
+                                A beautiful moment
+                            </span>
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 02 -->
+
+                    <article
+                        class="memory-card card-small card-top"
+                        data-image="pooja2.jpeg"
+                    >
+
+                        <div class="memory-image">
+
+                            <img
+                                src="pooja2.jpeg"
+                                alt="Pooja memory 2"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="memory-overlay">
+
+                            <span>
+                                That smile ❤️
+                            </span>
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 03 -->
+
+                    <article
+                        class="memory-card card-small card-bottom"
+                        data-image="pooja3.jpeg"
+                    >
+
+                        <div class="memory-image">
+
+                            <img
+                                src="pooja3.jpeg"
+                                alt="Pooja memory 3"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="memory-overlay">
+
+                            <span>
+                                Forever special
+                            </span>
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 04 -->
+
+                    <article
+                        class="memory-card card-medium"
+                        data-image="pooja4.jpeg"
+                    >
+
+                        <div class="memory-image">
+
+                            <img
+                                src="pooja4.jpeg"
+                                alt="Pooja memory 4"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="memory-overlay">
+
+                            <span>
+                                Precious memories
+                            </span>
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 05 -->
+
+                    <article
+                        class="memory-card card-hidden-mobile"
+                        data-image="pooja5.jpeg"
+                    >
+
+                        <div class="memory-image">
+
+                            <img
+                                src="pooja5.jpeg"
+                                alt="Pooja memory 5"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="memory-overlay">
+
+                            <span>
+                                Always shining ✨
+                            </span>
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 06 -->
+
+                    <article
+                        class="memory-card card-hidden-mobile"
+                        data-image="pooja6.jpeg"
+                    >
+
+                        <div class="memory-image">
+
+                            <img
+                                src="pooja6.jpeg"
+                                alt="Pooja memory 6"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="memory-overlay">
+
+                            <span>
+                                A moment to remember
+                            </span>
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="gallery-hint">
+
+                    <i class="fa-solid fa-hand-pointer"></i>
+
+                    Click a photo to view it
+
+                </div>
+
+
+                <button
+                    class="secondary-button"
+                    data-next
+                >
+
+                    Continue
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SLIDE 03 — LETTER
+        ====================================================== -->
+
+        <section
+            class="slide"
+            id="slide3"
+            data-slide="3"
+        >
+
+            <div class="slide-inner letter-slide">
+
+                <div class="section-heading centered">
+
+                    <span class="section-number">
+                        03
+                    </span>
+
+                    <p class="eyebrow">
+                        A MESSAGE FROM THE HEART
+                    </p>
+
+                    <h2>
+                        Dear Pooja di...
+                    </h2>
+
+                </div>
+
+
+                <div class="letter-wrapper">
+
+                    <div class="letter-paper">
+
+                        <div class="letter-decoration top-left">
+                            ✦
+                        </div>
+
+                        <div class="letter-decoration top-right">
+                            ♡
+                        </div>
+
+
+                        <p class="letter-greeting">
+                            Dear Pooja di,
+                        </p>
+
+
+                        <p>
+                            There are some people who make life
+                            brighter simply by being a part of it.
+                            You are one of those people.
+                        </p>
+
+
+                        <p>
+                            On your birthday, I just want you to
+                            know how special you are. Your smile,
+                            your presence, your little moments of
+                            happiness — they all make life a little
+                            more beautiful.
+                        </p>
+
+
+                        <p>
+                            I hope this new chapter of your life
+                            brings you countless reasons to smile,
+                            beautiful memories to keep, dreams that
+                            come true and people who always remind
+                            you how loved you are.
+                        </p>
+
+
+                        <p>
+                            Never stop being the wonderful person
+                            you are. Keep dreaming, keep smiling,
+                            keep shining and keep making the world
+                            a little brighter.
+                        </p>
+
+
+                        <p class="letter-final">
+
+                            Happy Birthday, Pooja di (CHUDAIL). ❤️
+
+                            <br>
+
+                            May your happiness always be bigger
+                            than your worries.
+
+                        </p>
+
+
+                        <div class="letter-signature">
+
+                            With lots of love,
+
+                            <span>
+                                Your ANSH (Pyara sa cute sa ladka).
+                            </span>
+
+                        </div>
+
+
+                        <div class="letter-decoration bottom-left">
+                            ♡
+                        </div>
+
+                        <div class="letter-decoration bottom-right">
+                            ✦
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="secondary-button"
+                    data-next
+                >
+
+                    One Last Surprise
+
+                    <i class="fa-solid fa-gift"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SLIDE 04 — FINAL CELEBRATION
+        ====================================================== -->
+
+        <section
+            class="slide"
+            id="slide4"
+            data-slide="4"
+        >
+
+            <div class="slide-inner finale-slide">
+
+                <div class="celebration-glow"></div>
+
+
+                <div class="final-crown">
+                    ✦
+                </div>
+
+
+                <p class="eyebrow">
+                    OCTOBER 5 • YOUR SPECIAL DAY
+                </p>
+
+
+                <h2 class="final-title">
+
+                    Happy Birthday
+
+                    <span>
+                        Pooja di ❤️
+                    </span>
+
+                </h2>
+
+
+                <p class="final-subtitle">
+
+                    May your life always be filled with
+                    beautiful moments, genuine smiles,
+                    endless love and dreams coming true.
+
+                </p>
+
+
+                <!-- COUNTDOWN -->
+
+                <div
+                    class="countdown-container"
+                    id="countdown"
+                >
+
+                    <div class="countdown-box">
+
+                        <span
+                            id="days"
+                            class="countdown-number"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-label">
+                            Days
+                        </span>
+
+                    </div>
+
+
+                    <div class="countdown-separator">
+                        :
+                    </div>
+
+
+                    <div class="countdown-box">
+
+                        <span
+                            id="hours"
+                            class="countdown-number"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-label">
+                            Hours
+                        </span>
+
+                    </div>
+
+
+                    <div class="countdown-separator">
+                        :
+                    </div>
+
+
+                    <div class="countdown-box">
+
+                        <span
+                            id="minutes"
+                            class="countdown-number"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-label">
+                            Minutes
+                        </span>
+
+                    </div>
+
+
+                    <div class="countdown-separator">
+                        :
+                    </div>
+
+
+                    <div class="countdown-box">
+
+                        <span
+                            id="seconds"
+                            class="countdown-number"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-label">
+                            Seconds
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SURPRISE BUTTON -->
+
+                <button
+                    class="surprise-button"
+                    id="surpriseButton"
+                >
+
+                    <span class="gift-icon">
+                        <i class="fa-solid fa-gift"></i>
+                    </span>
+
+                    <span>
+                        Open Your Birthday Surprise
+                    </span>
+
+                    <span class="button-shine"></span>
+
+                </button>
+
+
+                <div
+                    class="final-message"
+                    id="finalMessage"
+                >
+
+                    <div class="final-message-icon">
+                        🎂
+                    </div>
+
+                    <h3>
+                        You deserve all the happiness
+                        in the world!
+                    </h3>
+
+                    <p>
+                        Keep smiling, Pooja di.
+                        This world is a better place
+                        with your smile in it. ❤️
+                    </p>
+
+                    <div class="final-hearts">
+                        ❤️ ✨ 💕 ✨ ❤️
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="restart-button"
+                    id="restartButton"
+                >
+
+                    <i class="fa-solid fa-rotate-left"></i>
+
+                    Experience Again
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================
+         NAVIGATION DOTS
+    ========================================== -->
+
+    <nav
+        class="slide-navigation"
+        aria-label="Birthday sections"
+    >
+
+        <button
+            class="nav-dot active"
+            data-slide-target="1"
+            aria-label="Go to introduction"
+        >
+
+            <span></span>
+
+        </button>
+
+
+        <button
+            class="nav-dot"
+            data-slide-target="2"
+            aria-label="Go to memories"
+        >
+
+            <span></span>
+
+        </button>
+
+
+        <button
+            class="nav-dot"
+            data-slide-target="3"
+            aria-label="Go to letter"
+        >
+
+            <span></span>
+
+        </button>
+
+
+        <button
+            class="nav-dot"
+            data-slide-target="4"
+            aria-label="Go to final celebration"
+        >
+
+            <span></span>
+
+        </button>
+
+    </nav>
+
+
+    <!-- =========================================
+         ARROW NAVIGATION
+    ========================================== -->
+
+    <button
+        class="side-arrow side-arrow-left"
+        id="previousButton"
+        aria-label="Previous slide"
+    >
+
+        <i class="fa-solid fa-chevron-left"></i>
+
+    </button>
+
+
+    <button
+        class="side-arrow side-arrow-right"
+        id="nextButton"
+        aria-label="Next slide"
+    >
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </button>
+
+
+    <!-- =========================================
+         PHOTO LIGHTBOX
+    ========================================== -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+        aria-hidden="true"
+    >
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Close photo"
+        >
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt="Pooja memory"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         CONFETTI CONTAINER
+    ========================================== -->
+
+    <div
+        class="confetti-container"
+        id="confettiContainer"
+    ></div>
+
+
+    <!-- =========================================
+         TOAST MESSAGE
+    ========================================== -->
+
+    <div
+        class="birthday-toast"
+        id="birthdayToast"
+    >
+
+        <i class="fa-solid fa-heart"></i>
+
+        <span>
+            Made with love for Pooja di ❤️
+        </span>
+
+    </div>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
